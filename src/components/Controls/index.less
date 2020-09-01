@@ -1,0 +1,95 @@
+.panel {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.section {
+  border: 1px solid #000;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.section h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.section p {
+  margin: 4px 0 4px 0;
+}
+
+select {
+  cursor: pointer;
+}
+
+.section input[type='number'],
+select {
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.section input[type='number'] {
+  width: 30px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 26px;
+  left: 0;
+  right: 4px;
+  bottom: -20px;
+  background-color: #ccc;
+  border-radius: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
