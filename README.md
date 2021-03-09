@@ -2,7 +2,7 @@
 
 Synthesizer made with React & Tone.js
 
-https://www.stevenwarner.me/reactSynth/
+https://stevewarner.github.io/reactSynth/
 
 ## start development server
 
